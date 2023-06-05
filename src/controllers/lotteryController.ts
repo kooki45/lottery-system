@@ -1,6 +1,5 @@
 import { Request, Response } from 'express';
 import {
-    createLottery,
     getLotteryById,
     getLotteryInfo
 } from '@services/lotteryService'

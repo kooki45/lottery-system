@@ -2,9 +2,6 @@ import { Lottery } from '../models/Lottery';
 import { Ticket } from '../models/Ticket';
 import 'dotenv/config'
 
-// const lotteryService = require('@services/lotteryService')
-// const ticketService = require('@services/ticketService')
-
 import {
     getCurrentLottery,
     createLottery

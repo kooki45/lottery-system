@@ -1,8 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
 import sequelize from '@config/database';
-import { Lottery } from './Lottery';
-import { Contestant } from './contestant';
-
 class Ticket extends Model {
     public id!: number;
     public lotteryId!: number;

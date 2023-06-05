@@ -1,7 +1,7 @@
 import { Sequelize } from 'sequelize';
 import { Lottery } from '@models/Lottery';
 import { Ticket } from '@models/Ticket';
-import { Contestant } from '@models/contestant';
+import { Contestant } from '@models/Contestant';
 import 'dotenv/config'
 
 const sequelize = new Sequelize({

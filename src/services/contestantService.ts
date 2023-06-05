@@ -1,5 +1,5 @@
 import { Ticket } from '@models/Ticket';
-import { Contestant } from '../models/contestant';
+import { Contestant } from '@models/Contestant';
 
 import 'dotenv/config'
 
