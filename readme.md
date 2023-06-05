@@ -65,7 +65,7 @@ docker-compose up -d
 ```
 
 
-## Get lottery 
+## Get lottery by id 
 `GET /api/lottery/:id`
 
 ### Response
@@ -89,7 +89,7 @@ docker-compose up -d
 }
 ```
 
-## Get lottery 
+## Get ticket by id 
 `GET /api/ticket/:id`
 
 ### Response
