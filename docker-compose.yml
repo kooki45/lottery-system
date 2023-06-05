@@ -1,0 +1,34 @@
+version: '3.9'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '${PORT}:${PORT}'
+    depends_on:
+      - db
+    networks:
+      - lottery-network
+    restart: on-failure
+
+  db:
+    image: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - '${DB_PORT}:${DB_PORT}'
+    environment:
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB}
+    networks:
+      - lottery-network
+    restart: on-failure
+
+networks:
+  lottery-network:
+    driver: bridge
+
+volumes:
+  db_data:
