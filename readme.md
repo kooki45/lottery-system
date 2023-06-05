@@ -1,6 +1,6 @@
 # lottery system
 
-Express RESTful API server for continuously and periodically
+Express RESTful API server for a continuously and periodically lottery system
 
 ## Development
 
